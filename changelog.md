@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [1.10] - 2023-02-03
+### Changes
+- [all] Patched nginx so it gracefully shuts down on SIGTERM.
+- [all] start-nginx scripts ignore the SIGTERM signal so they do not kill off nginx abruptly.
+
 ## [1.9] - 2022-06-21
 ### Changes
 - If a Ruby installation is not found (required for the ERB templating feature), this buildpack will now install its own, to ensure it works on Heroku-22.
